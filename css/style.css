@@ -63,12 +63,44 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #333;
+ 
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
+}
+.tofixed {
+  position: fixed;
+  top: 0;
+ 
+  background: #333;
+  animation: showfixed 1s ease-in-out forwards;
+}
+.showtop {
+    opacity: 0;
+}
+
+.active .showtop {
+    animation: showtop 1s ease-in-out 1 forwards;
+}
+
+@keyframes showtop {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes showfixed {
+  from {
+      top: -100px
+  }
 }
 header .logo {
   font-size: 2.5rem;
@@ -211,6 +243,8 @@ header .seacrh-bar-container label:hover {
 }
 
 .touristAttractions .box-contanier .box .content {
+  display: grid;
+  grid-template-rows:3rem 20rem 5rem 3rem;
   padding: 2rem;
 }
 .touristAttractions .box-contanier .box .content h3 {
@@ -411,5 +445,10 @@ header .seacrh-bar-container label:hover {
   }
   .heading span {
     font-size: 2.5rem;
+  }
+  .touristAttractions .box-contanier .box .content {
+    display: grid;
+    grid-template-rows:3rem 15rem 5rem 3rem;
+    padding: 2rem;
   }
 }
