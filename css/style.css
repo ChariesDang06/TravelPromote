@@ -98,7 +98,7 @@ header {
   position: fixed;
   top: 0;
  
-  background: #333;
+  background: #2E4E32;
   animation: showfixed 1s ease-in-out forwards;
 }
 .showtop {
@@ -395,7 +395,7 @@ header .seacrh-bar-container label:hover {
   text-align: center;
 }
 .footer {
-  background: #333;
+  background: #2E4E32;
 }
 .footer .box-container {
   display: flex;
@@ -467,7 +467,7 @@ header .seacrh-bar-container label:hover {
     top: 100%;
     right: 0;
     left: 0;
-    background: #333;
+    background: #2E4E32;
     border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
     padding: 1rem 2rem;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -480,7 +480,7 @@ header .seacrh-bar-container label:hover {
     border-radius: 0.5rem;
     padding: 1.4rem;
     margin: 1.4rem 0;
-    background: #222;
+    background:#082516;
   }
 }
 @media (max-width: 450px) {
